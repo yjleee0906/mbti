@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MBTI 유형별 스트레스 해소💥방법</title>
+
+    <!-- CSS import -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="mbtistyle.css">
+  </head>
+
+  <body>
+    <!-- 시작 화면 -->
+    <div id="run" class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="mt-5">MBTI별 스트레스 해소💥방법</h1>
+            <img src="https://images.pexels.com/photos/5340280/pexels-photo-5340280.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+  " alt="사람사람" width=400>
+            <h5 class="mt-2">어떨 때 제일 스트레스 받나요?😕 <br> 나한테 딱 맞는 스트레스 해소법을 알아봅시다</h5>
+            <button type="button" id="run-btn" class="btn btn-outline-primary btn-lg mt-2">시작하기</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 문제 화면 -->
+    <div id="test" class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p id="number" class="text-end mt-5"></p>
+          <div id="progress" class="progress">
+            <div class="progress-bar" role="progressbar" style="" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <h2 id="title" class="text-center mt-5">문제</h2>
+          <h5 id="description" class="text-center mt-5">문제내용</h5>
+          <input type="hidden" id="type" value="EI">
+          <button type="button" id="A" class="btn btn-outline-primary btn-lg mt-2"></button>
+          <button type="button" id="B" class="btn btn-outline-primary btn-lg mt-2"></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 결과 화면 -->
+    <div id="result" class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <img id="img" src="" alt="결과이미지"  width=100px>
+          <h2 id="mymbti" class="mt-5">당신의 스트레스 해소 유형은?</h2>
+          <h5 id="explain" class="mt-2">소리소리를 질러야 하는 유형이닷</h5>
+
+          <button type="button" id="curation" class="btn btn-primary btn-lg mt-2">스트레스 해소방법 보러가기</button>
+          <button type="button" id="share" class="btn btn-warning btn-lg mt-2">공유하기</button>
+          <!-- <button type="button" class="btn btn-outline-info btn-lg mt-2">다시하기</button> -->
+          <button type="button" id="retry" class="btn btn-link mt-2">다시하기</button>
+
+        </div>
+      </div>
+    </div>
+
+    <input type="hidden" id="EI" value="0">
+    <input type="hidden" id="SN" value="0">
+    <input type="hidden" id="TF" value="0">
+    <input type="hidden" id="JP" value="0">
+
+    <!-- JS 연결 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="mbti.js"></script>
+  </body>
+</html>
